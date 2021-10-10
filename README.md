@@ -142,6 +142,38 @@ public class Taksimetre {
 
 ---
 
+## Pratik 5 - Dairenin Alanını ve Çevresini Bulan Program
+
+---
+
+
+
+```java
+import java.util.Scanner;
+public class Circle {
+    public static void main(String[] args) {
+        double pi = 3.14, perimeter, area, circleSegmentArea;
+        int radius, centralAngle;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter radius value: ");
+        radius = scanner.nextInt();
+
+        System.out.println("Enter central angle value: ");
+        centralAngle = scanner.nextInt();
+
+        perimeter = 2 * pi * radius;
+        area = pi * Math.pow(radius, 2);
+        circleSegmentArea = (pi * Math.pow(radius, 2) * centralAngle) / 360;
+
+        System.out.println("Perimeter: " + perimeter);
+        System.out.println("Area: " + area);
+        System.out.println("Circle segment area: " + circleSegmentArea);
+    }
+}
+```
+
+
 
 
 

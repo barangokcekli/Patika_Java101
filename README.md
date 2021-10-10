@@ -1,13 +1,30 @@
-
 # Patika Java 101
 
 -------------------
 
+## İçindekiler
 
-## Pratik 1 - Not Ortalaması Hesaplayan Program
+1. [Pratik 1 - Not  Ortalaması Hesaplayan Program](#pratik1)
+
+2. [Pratik 2 - KDV  Tutarı Hesaplayan Program](#pratik2)
+
+3. [Pratik 3 - Dik Üçgende Hipotenüs Bulan Program](#pratik3)
+
+4. [Pratik 4 - Taksimetre Hesaplayan Program](#pratik4)
+
+5. [Pratik 5 - Dairenin Alanını ve Çevresini Bulan Program](#pratik5)
+
+6. [Pratik 6 - Vücut Kitle İndeksini Hesaplayan Program](#pratik6)
+
+7. [Pratik 7 - Manav Kasa Programı](#pratik7)
+
+   
+
+
+
+## Pratik 1 - Not  Ortalaması Hesaplayan Program <a name ="pratik1"></a>
 
 ---
-
 
 ```java
 import java.util.Scanner;
@@ -49,8 +66,7 @@ public class NotOrtalama {
 
 ---
 
-
-## Pratik 2 - KDV Tutarı Hesaplayan Program
+## Pratik 2 - KDV  Tutarı Hesaplayan Program <a name ="pratik2"></a>
 
 ---
 
@@ -78,7 +94,12 @@ public class KdvHesaplama {
     }
 }
 ```
-## Pratik 3 - Dik Üçgende Hipotenüs Bulan Program
+
+---
+
+
+
+## Pratik 3 - Dik Üçgende Hipotenüs Bulan Program <a name ="pratik3"></a>
 
 ---
 
@@ -114,7 +135,9 @@ public class Hipotenus {
 
 ---
 
-## Pratik 4 - Taksimetre Hesaplayan Program
+
+
+## Pratik 4 - Taksimetre Hesaplayan Program <a name ="pratik4"></a>
 
 ---
 
@@ -142,7 +165,9 @@ public class Taksimetre {
 
 ---
 
-## Pratik 5 - Dairenin Alanını ve Çevresini Bulan Program
+
+
+## Pratik 5 - Dairenin Alanını ve Çevresini Bulan Program <a name ="pratik5"></a>
 
 ---
 
@@ -173,7 +198,9 @@ public class Circle {
 }
 ```
 
- ## Pratik 6 - Vücut Kitle İndeksini Hesaplayan Program
+---
+
+ ## Pratik 6 - Vücut Kitle İndeksini Hesaplayan Program <a name ="pratik6"></a>
 
 ---
 
@@ -202,7 +229,9 @@ public class BodyMassIndex {
 
 ---
 
-## Pratik 7 - Manav Kasa Programı
+
+
+## Pratik 7 - Manav Kasa Programı <a name ="pratik7"></a>
 
 ---
 
@@ -249,8 +278,6 @@ public class Manav {
 ```
 
 ---
-
-
 
 
 

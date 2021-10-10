@@ -78,5 +78,42 @@ public class KdvHesaplama {
     }
 }
 ```
+## Pratik 3 - Dik Üçgende Hipotenüs Bulan Program
+
+---
+
+
+
+```java
+import java.util.Scanner;
+
+public class Hipotenus {
+    public static void main(String[] args) {
+        int dikkenarA, dikkenarB;
+        double hipotenus, cevre, alan;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("1. Dik Kenarı Giriniz: ");
+        dikkenarA = scanner.nextInt();
+
+        System.out.print("2.Dik Kenarı Giriniz: ");
+        dikkenarB = scanner.nextInt();
+
+
+        hipotenus = Math.sqrt((dikkenarA * dikkenarA) + (dikkenarB * dikkenarB));
+        cevre = dikkenarA + dikkenarB + hipotenus;
+        alan = (dikkenarA * dikkenarB) / 2;
+
+        System.out.println("Hipotenüs: " + hipotenus);
+        System.out.println("Çevre: " + cevre);
+        System.out.println("Alan: " + alan);
+        
+    }
+}
+```
+
+---
+
+
 
 

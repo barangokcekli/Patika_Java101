@@ -18,6 +18,8 @@
 
 7. [Pratik 7 - Manav Kasa Programı](#pratik7)
 
+8. [Pratik 8 - Basit Hesap Makinesi](#pratik8)
+
    
 
 
@@ -278,6 +280,66 @@ public class Manav {
 ```
 
 ---
+
+## Pratik 8 - Basit Hesap Makinesi<a name ="pratik8"></a>
+
+---
+
+
+
+```java
+import java.util.Scanner;
+
+public class BasitHesapMakinesi {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        double number1, number2, result;
+        int selection;
+        
+        System.out.print("Number 1: ");
+        number1 = scanner.nextDouble();
+        System.out.print("Number 2: ");
+        number2 = scanner.nextDouble();
+
+        System.out.println("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme");
+        System.out.print("Select : ");
+        selection = scanner.nextInt();
+
+        switch (selection) {
+            case 1:
+                result = number1 + number2;
+                System.out.println(result);
+                break;
+            case 2:
+                result = number1 - number2;
+                System.out.println(result);
+                break;
+            case 3:
+                result = number1 * number2;
+                System.out.println(result);
+                break;
+            case 4:
+                if (number2 == 0){
+                    System.out.println("Zero Division Error!");
+                    break;
+                }else{
+                    result = number1 / number2;
+                    System.out.println(result);
+                }
+                break;
+            default:
+                System.out.println("ERROR");
+        }
+    }
+}
+```
+
+
+
+
+
+
 
 
 

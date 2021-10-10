@@ -173,6 +173,37 @@ public class Circle {
 }
 ```
 
+ ## Pratik 6 - Vücut Kitle İndeksini Hesaplayan Program
+
+---
+
+
+
+```java
+import java.util.Scanner;
+
+public class BodyMassIndex {
+    public static void main(String[] args) {
+        double height, weight, bodyMassIndex;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Boyunuzu (metre cinsinden) giriniz: ");
+        height = scanner.nextDouble();
+
+        System.out.print("Kilonuzu (kg cinsinden) giriniz: ");
+        weight = scanner.nextDouble();
+
+        bodyMassIndex = weight / Math.pow(height, 2);
+
+        System.out.println("Vücut Kitle İndeksiniz: " + bodyMassIndex);
+    }
+}
+```
+
+---
+
+
+
 
 
 

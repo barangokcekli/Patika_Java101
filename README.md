@@ -114,6 +114,35 @@ public class Hipotenus {
 
 ---
 
+## Pratik 4 - Taksimetre Hesaplayan Program
+
+---
+
+
+
+```java
+import java.util.Scanner;
+
+public class Taksimetre {
+    public static void main(String[] args) {
+        double mesafe, taksimetre, toplam;
+        int acilis = 10;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Gidilecek mesafeyi giriniz: ");
+        mesafe = scanner.nextDouble();
+
+        taksimetre = mesafe * 2.20;
+        toplam = (acilis + taksimetre) < 20 ? 20 : acilis + taksimetre;
+        System.out.println("Toplam tutar: " + toplam);
+    }
+}
+```
+
+---
+
+
 
 
 

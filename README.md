@@ -4,25 +4,20 @@
 
 ## İçindekiler
 
-1. [Pratik 1 - Not  Ortalaması Hesaplayan Program](#pratik1)
+| **PRATİKLER**                                                | **ÖDEVLER** |
+| :----------------------------------------------------------- | :---------: |
+| [Pratik 1 - Not  Ortalaması Hesaplayan Program](#pratik1)    |             |
+| [Pratik 2 - KDV  Tutarı Hesaplayan Program](#pratik2)        |             |
+| [Pratik 3 - Dik Üçgende Hipotenüs Bulan Program](#pratik3)   |             |
+| [Pratik 4 - Taksimetre Hesaplayan Program](#pratik4)         |             |
+| [Pratik 5 - Dairenin Alanını ve Çevresini Bulan Program](#pratik5) |             |
+| [Pratik 6 - Vücut Kitle İndeksini Hesaplayan Program](#pratik6) |             |
+| [Pratik 7 - Manav Kasa Programı](#pratik7)                   |             |
+| [Pratik 8 - Basit Hesap Makinesi](#pratik8)                  |             |
+| [Pratik 9 - Kullanıcı Girişi](#pratik9)                      |             |
+| [Pratik 10 - Sınıfı Geçme Durumu](#pratik10)                 |             |
 
-2. [Pratik 2 - KDV  Tutarı Hesaplayan Program](#pratik2)
 
-3. [Pratik 3 - Dik Üçgende Hipotenüs Bulan Program](#pratik3)
-
-4. [Pratik 4 - Taksimetre Hesaplayan Program](#pratik4)
-
-5. [Pratik 5 - Dairenin Alanını ve Çevresini Bulan Program](#pratik5)
-
-6. [Pratik 6 - Vücut Kitle İndeksini Hesaplayan Program](#pratik6)
-
-7. [Pratik 7 - Manav Kasa Programı](#pratik7)
-
-8. [Pratik 8 - Basit Hesap Makinesi](#pratik8)
-
-9. [Pratik 9 - Kullanıcı Girişi](#pratik9)
-
-   
 
 
 
@@ -283,6 +278,8 @@ public class Manav {
 
 ---
 
+
+
 ## Pratik 8 - Basit Hesap Makinesi<a name ="pratik8"></a>
 
 ---
@@ -338,6 +335,9 @@ public class BasitHesapMakinesi {
 ```
 
 
+
+---
+
 ## Pratik 9 - Kullanıcı Girişi <a name = "pratik9" ></a>
 
 ---
@@ -386,18 +386,55 @@ public class KullaniciGiris {
     }
 }
 ```
+
+
+
 ---
 
+## Pratik 10 - Sınıfı Geçme Durumu <a name = "pratik10"></a>
 
 
 
+```java
+import java.util.Scanner;
 
+public class Sinif {
+    public static void main(String[] args) {
+        int math, physics, turkish, chemistry, music;
+        double average;
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter your math grade: ");
+        math = scanner.nextInt();
 
+        System.out.print("Enter your physics grade: ");
+        physics = scanner.nextInt();
 
+        System.out.print("Enter your turkish grade: ");
+        turkish = scanner.nextInt();
 
+        System.out.print("Enter your chemistry grade: ");
+        chemistry = scanner.nextInt();
 
+        System.out.print("Enter your music grade: ");
+        music = scanner.nextInt();
 
+        average = (math + physics + turkish + chemistry + music) / 5;
+
+        if ((0 <= average) && (average < 55)){
+            System.out.println("You failed");
+        }
+        else if ((average >= 55) && (average <= 100)){
+            System.out.println("Congratulations! You passed the class.");
+
+        }else {
+            System.out.println("Error! Check the values that you entered.");
+        }
+    }
+}
+```
+
+---
 
 
 

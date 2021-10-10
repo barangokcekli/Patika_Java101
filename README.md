@@ -3,9 +3,11 @@
 
 -------------------
 
+
 ## Pratik 1 - Not Ortalaması Hesaplayan Program
 
 ---
+
 
 ```java
 import java.util.Scanner;
@@ -46,6 +48,7 @@ public class NotOrtalama {
 ```
 
 ---
+
 
 ## Pratik 2 - KDV Tutarı Hesaplayan Program
 

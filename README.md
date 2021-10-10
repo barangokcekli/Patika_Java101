@@ -20,6 +20,8 @@
 
 8. [Pratik 8 - Basit Hesap Makinesi](#pratik8)
 
+9. [Pratik 9 - Kullanıcı Girişi](#pratik9)
+
    
 
 
@@ -334,6 +336,58 @@ public class BasitHesapMakinesi {
     }
 }
 ```
+
+
+## Pratik 9 - Kullanıcı Girişi <a name = "pratik9" ></a>
+
+---
+
+
+
+```java
+import java.util.Scanner;
+
+public class KullaniciGiris {
+    public static void main(String[] args) {
+        String userName = "patika", password = "java123";
+        String inptUserName, inptPassword;
+        int resetSelection;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your username: ");
+        inptUserName = scanner.nextLine();
+
+        System.out.print("Enter your password: ");
+        inptPassword = scanner.nextLine();
+
+        if (inptUserName.equals(userName)){
+            if (inptPassword.equals(password)){
+                System.out.println("You've successfully logged in.");
+            }else{
+                System.out.print("Error! Invalid password.If you want to change your password enter 1 if not enter 0 : ");
+                resetSelection = scanner.nextInt();
+                if (resetSelection == 1){
+                    System.out.print("Enter your new password: ");
+                    String newPassword = scanner.next();
+                    if(newPassword.equals(inptPassword) || (newPassword.equals(password))){
+                        System.out.println("New password cannot be the same as your old password.");
+                    }else{
+                        System.out.println("You've successfully changed your password");
+                        newPassword = inptPassword;
+                    }
+                }else {
+                    System.out.println("Exiting....");
+                }
+            }
+        }else{
+            System.out.println("Error! : Invalid username");
+        }
+    }
+}
+```
+---
+
 
 
 

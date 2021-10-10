@@ -202,6 +202,55 @@ public class BodyMassIndex {
 
 ---
 
+## Pratik 7 - Manav Kasa Programı
+
+---
+
+
+
+```java
+import java.util.Scanner;
+
+public class Manav {
+    public static void main(String[] args) {
+        double armut = 2.14, elma = 3.67, domates = 1.11, muz = 0.95, patlican = 5.00;
+        double miktarArmut, miktarElma, miktarDomates, miktarMuz, miktarPatlican;
+        double total;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("""
+                Meyveler ve KG Fiyatları
+                ------------------------
+                Armut : 2,14 TL
+                Elma : 3,67 TL
+                Domates : 1,11 TL
+                Muz: 0,95 TL
+                Patlıcan : 5,00 TL""");
+
+        System.out.print("Alınan Armut Miktarını Kg Cinsinden Giriniz: ");
+        miktarArmut = scanner.nextDouble();
+
+        System.out.print("Alınan Elma Miktarını Kg Cinsinden Giriniz: ");
+        miktarElma = scanner.nextDouble();
+
+        System.out.print("Alınan Domates Miktarını Kg Cinsinden Giriniz: ");
+        miktarDomates = scanner.nextDouble();
+
+        System.out.print("Alınan Muz Miktarını Kg Cinsinden Giriniz: ");
+        miktarMuz = scanner.nextDouble();
+
+        System.out.print("Alınan Patlıcan Miktarını Kg Cinsinden Giriniz: ");
+        miktarPatlican = scanner.nextDouble();
+
+        total = (miktarArmut * armut) + (miktarElma * elma) + (miktarDomates * domates) + (miktarMuz * muz) + (miktarPatlican * patlican);
+        System.out.println("Toplam tutar: " + total);
+    }
+}
+
+```
+
+---
+
+
 
 
 

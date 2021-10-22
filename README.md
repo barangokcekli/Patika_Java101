@@ -1,3 +1,5 @@
+
+
 # Patika Java 101
 
 -------------------
@@ -19,6 +21,16 @@
 | [Pratik 11 - Hava Sıcaklığına Göre Etkinlik Önerme](#pratik11) |                                                          |
 | [Pratik 12 - Sayıları Küçükten Büyüğüe Sıralayan Program](#pratik12) |                                                          |
 | [Pratik 13 - Burç Bulan Program](#pratik13)                  |                                                          |
+| [Pratik 14 - Girilen Sayıya Kadar Olan Sayılardan 3 ve 4'e Bölünebilenlerin Ortalamsını Bulan Program](#pratik14) |                                                          |
+| [Pratik 15 - Girilen Sayılardan 4'ün Katlarını Bulan Program](#pratik15) |                                                          |
+| [Pratik 16 - Girilen Sayıya Kadar Olan 4 ve 5'in Kuvvetlerini Bulan Program](#pratik16) |                                                          |
+| [Pratik 17 - Faktöriyel Hesaplayan Program](#pratik17)       |                                                          |
+| [Pratik 18 - For Döngüsü İle Üs Alan Program](#pratik18)     |                                                          |
+| [Pratik 19 - Armstrong Sayı](#pratik19)                      |                                                          |
+| [Pratik 20 - Harmonik Sayılar](#pratik20)                    |                                                          |
+|                                                              |                                                          |
+|                                                              |                                                          |
+|                                                              |                                                          |
 |                                                              |                                                          |
 
 
@@ -747,4 +759,225 @@ public class ArtikYil {
 ```
 
 ---
+
+## Pratik 14 - Girilen Sayıya Kadar Olan Sayılardan 3 ve 4'e Bölünebilenlerin Ortalamsını Bulan Program <a name = "pratik14"></a>
+
+---
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int n;
+        double counter = 0;
+        double counter2 = 0;
+        double result = 0;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir sayı girin: ");
+        n = scanner.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            if ((i % 3 == 0) || (i % 4 == 0)){
+                counter += i;
+                counter2++;
+                result = counter / counter2;
+            }
+        }
+        System.out.println("Ortalama: " + result);
+    }
+}
+```
+
+---
+
+## Pratik 15 - Girilen Sayılardan 4'ün Katlarını Bulan Program <a name = "pratik15"></a>
+
+---
+
+Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri kabul eden ve girilen değerlerden çift ve 4'ün katları olan sayıları toplayıp ekrana basan programı yazıyoruz.
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int n;
+        int sum = 0;
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.print("Bir sayı girin: ");
+            n = scanner.nextInt();
+            if (n % 2 == 1){
+                System.out.println("Tek bir sayı girdiniz.Çıkış yapılıyor...");
+                break;
+            }else if (n % 4 == 0){
+                sum += n;
+            }
+        }while (n % 2 == 0);
+
+        System.out.println("Toplam: " + sum);
+    }
+}
+```
+
+
+
+---
+
+## Pratik 16 - Girilen Sayıya Kadar Olan 4 ve 5'in Kuvvetlerini Bulan Program <a name="pratik16"></a>
+
+---
+
+
+
+Java döngüler ile girilen sayıya kadar olan 4 ve 5'in kuvvetlerini ekrana yazdıran programı yazıyoruz.
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int n;
+        int counter = 0;
+        int counter2 = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        n = scanner.nextInt();
+
+        System.out.println("4'ün katları:\n");
+        for (int i = 1; i < n ; i*=4) {
+            System.out.println(4 + "^" + counter + " = " + i);
+            counter++;
+        }
+
+        System.out.println("5'in katları:\n");
+        for (int j = 1; j < n ; j*=5) {
+            System.out.println(5 + "^" + counter2 + " = " + j);
+            counter2++;
+        }
+    }
+}
+```
+
+---
+
+## Pratik 17 - Faktöriyel Hesaplayan Program <a name="pratik17"></a>
+
+---
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int n;
+        int total = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin: ");
+        n = scanner.nextInt();
+
+        for (int i = 1; i <= n ; i++) {
+            total *= i;
+        }
+        System.out.println(n + "! = " + total);
+    }
+}
+```
+
+---
+
+## Pratik 18 - For Döngüsü İle Üs Alan Program<a name="pratik18"></a>
+
+---
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int b,p;
+        Scanner scanner = new Scanner(System.in);
+        int total = 1;
+
+        System.out.print("Enter base value: ");
+        b = scanner.nextInt();
+
+        System.out.print("Enter power value: ");
+        p = scanner.nextInt();
+
+        for (int i = 1; i <= p; i++) {
+            total *= b;
+        }
+        System.out.println("Total: "+total);
+    }
+}
+```
+
+---
+
+## Pratik 19 -  Armstrong Sayı  <a name ="pratik19"></a>
+
+---
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Sayı Giriniz :");
+        int number = input.nextInt();
+        int basNumber = 0;
+        int tempNumber = number;
+        int basValue;
+        int result = 0;
+        int basPow;
+
+        while (tempNumber != 0) {
+            tempNumber /= 10;
+            basNumber++;
+        }
+        tempNumber = number;
+        while (tempNumber != 0) {
+            basValue = tempNumber % 10;
+            // 1*1*1*1 = 1^4
+            basPow = 1;
+            for (int i = 1; i <= basNumber; i++) {
+                basPow *= basValue;
+            }
+            result += basPow;
+            tempNumber /= 10;
+        }
+        if (result == number) {
+            System.out.println(number + " sayısı bir Armstrong sayıdır.");
+        } else {
+            System.out.println(number + " sayısı bir Armstrong sayısı değildir.");
+        }}}
+```
+
+---
+
+## Pratik 20 - Harmonik Sayılar <a name="pratik20"></a>
+
+---
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int n;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Bir sayı girin:");
+        n = scanner.nextInt();
+        double result = 0;
+        for (double i = 1; i <= n; i++) {
+            result += (1/i);
+        }
+        System.out.println(result);
+    }
+}
+```
 
